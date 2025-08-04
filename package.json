@@ -10,7 +10,7 @@
     "vercel-build": "prisma generate && next build",
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts",
     "add-products": "ts-node scripts/add-products.ts"
-  },
+    },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@prisma/client": "^6.11.1",
