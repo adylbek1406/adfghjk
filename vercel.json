@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next",
+      "config": {
+        "prisma": {
+          "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+        }
+      }
+    }
+  ],
+  "env": {
+    "PRISMA_GENERATE_DATAPROXY": "true"
+  }
+} 

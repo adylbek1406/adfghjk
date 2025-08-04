@@ -1,0 +1,55 @@
+{
+  "name": "apakai-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "postinstall": "prisma generate",
+    "vercel-build": "prisma generate && next build",
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts",
+    "add-products": "ts-node scripts/add-products.ts"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.1.1",
+    "@prisma/client": "^6.11.1",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/js-cookie": "^3.0.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/pg": "^8.11.11",
+    "@uploadthing/react": "^7.3.0",
+    "@vercel/postgres": "^0.10.0",
+    "autoprefixer": "^10.4.17",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.6.0",
+    "jose": "^6.0.10",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "libphonenumber-js": "^1.12.9",
+    "next": "^14.1.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "pg": "^8.14.0",
+    "postcss": "^8.4.35",
+    "prisma": "^6.11.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.0.1",
+    "slugify": "^1.6.6",
+    "tailwindcss": "^3.4.1",
+    "uploadthing": "^7.6.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "@tailwindcss/forms": "^0.5.10",
+    "@types/node": "22.13.10",
+    "@types/react": "19.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "5.8.2"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}
